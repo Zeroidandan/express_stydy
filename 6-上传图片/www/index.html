@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 如果有文件上传的表单，必须要写一个enctype编码方式 -->
+    <form action="/tijiao" method="POST" enctype="multipart/form-data">
+        <p>
+            姓名：
+            <input type="text" name="name" id="">
+        </p>
+        <p>
+            性别：
+           <label for="">
+                <input type="radio" name="sex" value="男">男
+           </label>
+           <label for="">
+                <input type="radio" name="sex" value="女">女
+           </label>
+        </p>
+        <p>
+            年龄：
+            <input type="text" name="age"" id="">
+        </p>
+        <p>
+            照片：
+            <input type="file" name="file">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+        
+    </form>
+</body>
+</html>
